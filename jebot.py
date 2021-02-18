@@ -48,7 +48,9 @@ async def welcome(_, message: Message):
     )
     await message.reply("""<b>✨ Hi, welcome to Infinity JE group chat!
 
-To have a good stay here, use polite words and respect other members.</b>""")
+To have a good stay here, use polite words and respect other members.
+
+Join with our official channel @InfJE and bots channel @Infinity_BOTs</b>""")
     await kick_restricted_after_delay(300, button_message)
 
 
