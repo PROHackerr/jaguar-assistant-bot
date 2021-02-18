@@ -50,7 +50,7 @@ async def welcome(_, message: Message):
 
 To have a good stay here, use polite words and respect other members.
 
-Join with our official channel @InfJE and bots channel @Infinity_BOTs</b>""")
+Join with our official channel @InfJE and bots channel @Infinity_BOTs.</b>""")
     await kick_restricted_after_delay(300, button_message)
 
 
