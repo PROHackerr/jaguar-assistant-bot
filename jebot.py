@@ -1,11 +1,17 @@
 import asyncio
 from datetime import datetime
-from pyrogram import filters
+from pyrogram import filters, Client
 from main WELCOME_DELAY_KICK_SEC
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.types import ChatPermissions
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
 
+Jebot = Client(
+   "Join Verify",
+   api_id=Config.APP_ID,
+   api_hash=Config.API_HASH,
+   bot_token=Config.TG_BOT_TOKEN,
+)
 
 @Jebot.on_message(filters.new_chat_members)
 async def welcome(_, message: Message):
@@ -83,3 +89,12 @@ async def _ban_restricted_user_until_date(group_chat,
             await group_chat.kick_member(user_id, until_date=until_date)
     except UserNotParticipant:
         pass
+
+print(
+    """
+Bot Started!
+Join @Infinity_BOTs
+"""
+)
+
+Jebot.run()
