@@ -46,7 +46,7 @@ async def welcome(_, message: Message):
         ),
         quote=True
     )
-    await message.reply_animation("CAACAgIAAxkBAAKlimAupPzd2kFcBlOuIi1dTJxlGJ2SAAIBAQACVp29CiK-nw64wuY0HgQ")
+    await message.reply_animation("CgACAgQAAxkBAAKlfmAupIKZInZxUMBYRwhOCguu3JF8AAJPAAMZWNxRUVoQQngxxzAeBA")
     await kick_restricted_after_delay(300, button_message)
 
 
