@@ -73,7 +73,7 @@ async def callback_query_welcome_button(_, callback_query):
     pending_user_id = pending_user.id
     pressed_user_id = callback_query.from_user.id
     if pending_user_id == pressed_user_id:
-        await callback_query.answer("Congrats, captcha passed!")
+        await callback_query.answer("Cool, you passed captcha!")
         await button_message.chat.unban_member(pending_user_id)
         await button_message.delete()
     else:
