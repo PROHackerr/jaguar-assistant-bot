@@ -1,11 +1,11 @@
 # Jaguar Assistant Bot
 
-## This bot can mute members when joining to a group and then member verfied after clicking verify here button and unmute member.
+#### This bot can mute members when joining to a group and then member verfied after clicking verify here button and unmute member.
 
 ### Credits:
 
-[Pyrogram](https://github.com/pyrogram/pyrogram)
+<b>[Pyrogram](https://github.com/pyrogram/pyrogram)</b>
 
 ### Developer:
 
-[@ImJanindu](https://t.me/ImJanindu)
+<b>[@ImJanindu](https://t.me/ImJanindu)</b>
