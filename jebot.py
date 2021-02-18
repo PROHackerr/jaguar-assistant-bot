@@ -24,6 +24,14 @@ Jebot = Client(
    bot_token=Config.TG_BOT_TOKEN,
 )
 
+@Jebot.on_message(filters.command("start"))
+async def start(client, message):
+   await Jebot.send_message(
+           chat_id=message.chat.id,
+           text="""<b>Hey There, I'm Assistant of Jaguar Eaglets Group
+
+Made by @Infinity_BOTs 🇱🇰</b>""")
+
 @Jebot.on_message(filters.new_chat_members)
 async def welcome(_, message: Message):
     """Mute new member and send message with button"""
