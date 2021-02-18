@@ -38,7 +38,7 @@ async def welcome(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "👉 Press Here to Verify 👈",
+                        "Press Here to Verify",
                         callback_data="pressed_button"
                     )
                 ]
