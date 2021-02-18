@@ -24,8 +24,6 @@ Jebot = Client(
    bot_token=Config.TG_BOT_TOKEN,
 )
 
-WELCOME_DELAY_KICK_SEC = 300s
-
 @Jebot.on_message(filters.new_chat_members)
 async def welcome(_, message: Message):
     """Mute new member and send message with button"""
@@ -49,7 +47,7 @@ async def welcome(_, message: Message):
         quote=True
     )
     await message.reply_animation("CgACAgQAAx0CWIlO9AABATjjYBrlKqQID0SQ7Ey7bkVRKM5gNn8AAl8CAAIm39VRHDx6EoKU6W0eBA")
-    await kick_restricted_after_delay(WELCOME_DELAY_KICK_SEC, button_message)
+    await kick_restricted_after_delay(300, button_message)
 
 
 @Jebot.on_callback_query(filters.regex("pressed_button"))
