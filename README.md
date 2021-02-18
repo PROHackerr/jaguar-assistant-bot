@@ -1,6 +1,6 @@
 # Jaguar Assistant Bot
 
-This bot can mute members when joining to a group and then member verfied after clicking verify here button and unmute member. If joined user did not verified in 5 minutes (default) will banned from group. This will br helpful for bot spamming on groups.
+This bot can mute members when joining to a group and then member verfied after clicking verify here button and unmute member. If joined user did not verified in 5 minutes (default) will banned from group. This will be helpful for defend bot spamming on groups.
 
 ### How to make a clone 🤔
 
