@@ -1,7 +1,6 @@
 import asyncio
 from datetime import datetime
 from pyrogram import filters, Client
-from main WELCOME_DELAY_KICK_SEC
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram.types import ChatPermissions
 from pyrogram.errors.exceptions.bad_request_400 import UserNotParticipant
@@ -19,7 +18,7 @@ async def welcome(_, message: Message):
     new_members = [f"{u.mention}" for u in message.new_chat_members]
     text = (f"Welcome, {', '.join(new_members)}\n**Are you human?**\n"
             "You will be removed from this chat if you are not verified "
-            f"in {WELCOME_DELAY_KICK_SEC} seconds")
+            f"in 5 minutes")
     await message.chat.restrict_member(message.from_user.id, ChatPermissions())
     button_message = await message.reply(
         text,
@@ -36,7 +35,7 @@ async def welcome(_, message: Message):
         quote=True
     )
     await message.reply_animation("CgACAgQAAx0CWIlO9AABATjjYBrlKqQID0SQ7Ey7bkVRKM5gNn8AAl8CAAIm39VRHDx6EoKU6W0eBA")
-    await kick_restricted_after_delay(WELCOME_DELAY_KICK_SEC, button_message)
+    await kick_restricted_after_delay(300s, button_message)
 
 
 @Jebot.on_callback_query(filters.regex("pressed_button"))
