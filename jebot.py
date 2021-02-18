@@ -46,7 +46,9 @@ async def welcome(_, message: Message):
         ),
         quote=True
     )
-    await message.reply_media("CgACAgQAAxkBAAKlfmAupIKZInZxUMBYRwhOCguu3JF8AAJPAAMZWNxRUVoQQngxxzAeBA")
+    await message.reply("""<b>✨ Hi, welcome to Infinity JE group chat!
+
+To have a good stay here, use polite words and respect other members.</b>""")
     await kick_restricted_after_delay(300, button_message)
 
 
