@@ -54,7 +54,7 @@ async def welcome(_, message: Message):
         ),
         quote=True
     )
-    await message.reply("""<b>✨ Hi, welcome to Infinity JE group chat!
+    await message.reply("""<b>✨ Hi {', '.join(new_members)}, welcome to Infinity JE group chat!
 
 To have a good stay here, use polite words and respect other members
 
